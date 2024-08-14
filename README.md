@@ -28,17 +28,17 @@ MiniAn is an analysis pipeline and visualization tool inspired by both [CaImAn](
 # Mamba Installation Procedure
 
 1. Run conda as admin
-1. 'conda create -y -n minian'
-1. 'conda activate minian'
-1. 'conda install -y -c conda-forge mamba'
-1. 'conda deactivate'
-1. 'conda activate minian'
-1. 'mamba install -y -c conda-forge minian'
-1. 'conda install python=3.8'
-1. ' mamba install -y -c conda-forge minian'
-1. 'conda activate minian'
-1. 'minian-install --notebooks'
-1. 'minian-install --demo'
+1. `conda create -y -n minian`
+1. `conda activate minian`
+1. `conda install -y -c conda-forge mamba`
+1. `conda deactivate`
+1. `conda activate minian`
+1. `mamba install -y -c conda-forge minian`
+1. `conda install python=3.8`
+1. `mamba install -y -c conda-forge minian`
+1. `conda activate minian`
+1. `minian-install --notebooks`
+1. `minian-install --demo`
 
 # Documentation
 
