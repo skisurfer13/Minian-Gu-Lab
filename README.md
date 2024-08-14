@@ -12,20 +12,42 @@
 
 MiniAn is an analysis pipeline and visualization tool inspired by both [CaImAn](https://github.com/flatironinstitute/CaImAn) and [MIN1PIPE](https://github.com/JinghaoLu/MIN1PIPE) package specifically for [Miniscope](http://miniscope.org/index.php/Main_Page) data.
 
-# Quick Start Guide
+# Windows Setup Instructions (Recommended Method)
 
-1. Create a new conda env: `conda create -y --name minian`
-1. Activate the environment: `conda activate minian`
-1. Install MiniAn: `conda install -y -c conda-forge minian`
-1. Install the pipeline notebooks: `minian-install --notebooks`
-1. Optional install the demo movies: `minian-install --demo`
-1. Fire up jupyter: `jupyter notebook` and open the notebook "pipeline.ipynb"
+1. Clone the Github Repo locally: `git clone https://github.com/skisurfer13/Minian-Gu-Lab.git`
+1. Change directory to Minian: `cd minian/`
+1. Create a Conda local env: `conda env create -n minian -f environment.yml`
+1. Activate conda env: `conda activate minian`
+1. Fix Panel installation:
+    * On Windows: Copy panel files from `.conda/envs/minian/site-packages/` to `.conda/envs/minian/Lib/site-packages/`
+    * On Linux: Install panel with pip in minian conda environment: `pip install panel=0.8.0`
+1. Install pywiz libraries with conda: `conda install -n minian -c pyviz pyviz_comms=2.2.1`
+1. Install shot-scraper CLI tool in minian conda environment: `pip install shot-scraper`. Also run `shot-scraper install` 
+1. Fire up jupyter: `jupyter notebook` and open the notebook "Minian_pipeline.ipynb"
+
+# Mamba Installation Procedure
+
+1. Run conda as admin
+1. 'conda create -y -n minian'
+1. 'conda activate minian'
+1. 'conda install -y -c conda-forge mamba'
+1. 'conda deactivate'
+1. 'conda activate minian'
+1. 'mamba install -y -c conda-forge minian'
+1. 'conda install python=3.8'
+1. ' mamba install -y -c conda-forge minian'
+1. 'conda activate minian'
+1. 'minian-install --notebooks'
+1. 'minian-install --demo'
 
 # Documentation
 
 MiniAn documentation is hosted on ReadtheDocs at:
 
 https://minian.readthedocs.io/
+This contains the documentation for the Original Minian Pipeline maintained by Cai Lab
+
+This upgraded version of Minian is maintained by Pranav Sawant at The University of Texas at Dallas 
 
 # Contributing to MiniAn
 
