@@ -15,7 +15,7 @@ MiniAn is an analysis pipeline and visualization tool inspired by both [CaImAn](
 # Windows Setup Instructions (Recommended Method)
 
 1. Clone the Github Repo locally: `git clone https://github.com/skisurfer13/Minian-Gu-Lab.git`
-1. Change directory to Minian: `cd minian/`
+1. Change directory to Minian: `cd Minian-Gu-Lab`
 1. Create a Conda local env: `conda env create -n minian -f environment.yml`
 1. Activate conda env: `conda activate minian`
 1. Fix Panel installation:
